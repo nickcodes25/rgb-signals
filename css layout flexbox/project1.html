@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Flexbox</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    header{
+        font-size: 50px;
+        text-align: center;
+        border: 2px solid black;
+        padding: 50px;
+        background-color: #666;
+    }
+    section{
+        display: flex;
+    }
+    nav{
+        padding: 30px;
+        background-color: #ccc;
+        font-size: 18px;
+    }
+    nav ul{ 
+        list-style-type: none;
+        padding: 0px;
+       
+    }
+   
+ .t{
+    text-align: left;
+    padding: 2px;
+ }
+ #guj{
+    padding: 5px;
+ }
+ div{
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+ }
+ footer{
+    background-color: #777;
+    text-align: center;
+    font-size: 18px;
+    padding: 4px;
+ }
+</style>
+<body>
+    <h1>CSS Layout Flexbox</h1>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect.</p>
+    <header>Cities</header>
+    <section>
+        <nav>
+        <ul>
+           <li><a href="blank">Gujarat</a></li>
+           <li><a href="blank">Mumbai</a></li>
+           <li><a href="blank">Sholapur</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1 class="t">Gujarat</h1>
+        <p id="guj">Certainly! Gujarat is a state located on the western coast of India. Here are some key facts about Gujarat:
+    
+            Capital and Largest City: The capital of Gujarat is Gandhinagar, while its largest city is Ahmedabad.</p>
+            
+           <p id="guj">Geography: Gujarat is known for its diverse geography, including the Arabian Sea coastline, the Great Rann of Kutch, and various mountain ranges. The state shares its borders with Rajasthan, Madhya Pradesh, Maharashtra, and the union territories of Daman and Diu and Dadra and Nagar Haveli. </p>
+    </div>
+
+    </section>
+   <footer>
+    <p>Footer</p>
+   </footer>
+</body>
+</html>
